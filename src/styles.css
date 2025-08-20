@@ -1,55 +1,73 @@
 .search-temperature {
   display: flex;
   justify-content: center;
-  position: relative;
-  margin-top: 15px;
 }
 .search-input {
-  color: rgba(255, 255, 255);
-  opacity: 1;
-  padding: 13px 18px;
+  background-color: rgb(255, 255, 255, 0.2);
+  color: white;
+  padding: 10px 20px;
   width: 60%;
   border-radius: 5px;
   margin: 20px 10px;
   border: none;
-  font-size: 16px;
+  font-size: 14px;
   padding: 18px;
 }
 .search-button {
+  background-color: rgb(255, 255, 255, 0.2);
+  color: white;
   border-radius: 5px;
-  padding: 13px 18px;
+  padding: 10px 20px;
   border: none;
-  font-size: 15px;
-  margin: 20px;
+  font-size: 14px;
+  margin: 20px 10px;
+  cursor: pointer;
 }
+
 h1 {
   position: relative;
   display: flex;
   justify-content: center;
   font-size: 60px;
   font-family: "Karla", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
+  color: white;
+  margin-top: 0;
 }
+.icon {
+  display: flex;
+  justify-content: center;
+  font-size: 100px;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+
 h2 {
+  color: white;
   display: flex;
   justify-content: center;
   font-weight: 200;
+  margin-bottom: 30px;
 }
 .time {
   display: flex;
   justify-content: center;
   color: rgb(255, 255, 255, 0.5);
+  line-height: 30px;
+  font-size: 16px;
 }
 .humidity {
   display: flex;
   justify-content: center;
   color: rgb(255, 255, 255, 0.5);
+  line-height: 25px;
+  font-size: 16px;
 }
 footer {
   color: rgb(255, 255, 255, 0.5);
   text-align: center;
 
-  margin-top: 100%;
+  margin-top: 40%;
   padding: 20px;
 }
 .weather-app {
@@ -58,5 +76,10 @@ footer {
     rgb(12, 20, 69) -16.9%,
     rgb(112, 26, 98) 119.9%
   );
-  color: white;
+}
+a {
+  color: rgb(23, 163, 228);
+}
+strong {
+  color: rgb(23, 163, 228);
 }
