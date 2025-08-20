@@ -5,20 +5,22 @@
   margin-top: 15px;
 }
 .search-input {
-  padding: 13px;
-  width: 80%;
+  color: rgba(255, 255, 255);
+  opacity: 1;
+  padding: 13px 18px;
+  width: 60%;
   border-radius: 5px;
-  margin: 10px;
+  margin: 20px 10px;
   border: none;
-  background-color: rgb(0, 0, 0, 0.05);
+  font-size: 16px;
+  padding: 18px;
 }
 .search-button {
   border-radius: 5px;
-  border: none;
-
-  font-size: 15px;
-  margin: 10px;
   padding: 13px 18px;
+  border: none;
+  font-size: 15px;
+  margin: 20px;
 }
 h1 {
   position: relative;
@@ -36,17 +38,25 @@ h2 {
 .time {
   display: flex;
   justify-content: center;
-  color: rgb(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255, 0.5);
 }
 .humidity {
   display: flex;
   justify-content: center;
-  color: rgb(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255, 0.5);
 }
 footer {
-  color: rgb(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255, 0.5);
   text-align: center;
 
   margin-top: 100%;
   padding: 20px;
+}
+.weather-app {
+  background: linear-gradient(
+    179.4deg,
+    rgb(12, 20, 69) -16.9%,
+    rgb(112, 26, 98) 119.9%
+  );
+  color: white;
 }
