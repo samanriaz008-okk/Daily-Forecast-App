@@ -32,18 +32,20 @@
         </form>
       </header>
       <main>
-        <div class="icon">🌥️</div>
+        <div class="icon" id="icon">🌥️</div>
         <h1 class="current-temperature" id="current-temperature"></h1>
         <h2></h2>
 
         <div class="current-forecast">
           <div class="first-line">
-            <div class="time" id="time">Saturday 12:30</div>
-            <span class="condition">, Scattered Clouds </span>
+            <div class="time" id="time"></div>
+            <span id="condition"></span>
           </div>
           <div class="second-line">
-            <div class="humidity">humidity :<strong> 66%</strong></div>
-            <span class="wind">, wind :<strong> 3.13km/h</strong> </span>
+            <div class="humidity">
+              humidity :<strong id="humidity"></strong>
+            </div>
+            <span class="wind"> , wind :<strong id="wind"></strong> </span>
           </div>
         </div>
       </main>

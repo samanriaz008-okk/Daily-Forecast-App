@@ -1,7 +1,3 @@
-//display input value in place of city name
-//display current time
-//display current temperature
-
 function displayTime(date) {
   let days = [
     "Sunday",
@@ -10,6 +6,7 @@ function displayTime(date) {
     "Wednesday",
     "Thursday",
     "Friday",
+
     "Saturday",
   ];
 
@@ -27,16 +24,29 @@ function displayTime(date) {
   return `${day} ${hour}:${mins}`;
 }
 
-let now = new Date();
-let timeElement = document.querySelector("#time");
-timeElement.innerHTML = displayTime(now);
-
 function displayTemperature(response) {
   let currentTemperature = document.querySelector("#current-temperature");
   let temperature = Math.round(response.data.temperature.current);
-  currentTemperature.innerHTML = `${temperature}°C`;
   let cityElement = document.querySelector("h2");
-  cityElement.innerHTML = response.data.city;
+  let city = response.data.city;
+
+  let weatherCondition = document.querySelector("#condition");
+  let humidityElement = document.querySelector("#humidity");
+  let windElement = document.querySelector("#wind");
+  let timeElement = document.querySelector("#time");
+  let date = new Date(response.data.time * 1000);
+
+  timeElement.innerHTML = displayTime(date);
+  cityElement.innerHTML = city;
+  currentTemperature.innerHTML = `${temperature}°C`;
+  weatherCondition.innerHTML = `, Condition: ${response.data.condition.description}`;
+  humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
+  windElement.innerHTML = `${response.data.wind.speed}km/h`;
+
+  let weatherIcon = document.querySelector("#icon");
+  let currentWeather = response.data.condition;
+  //weatherIcon.innerHTML = currentWeather;
+  console.log(response);
 }
 function searchCity(city) {
   let apiKey = "9aa8ab264078edftd860c3e0foabbd02";
