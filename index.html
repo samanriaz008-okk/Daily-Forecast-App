@@ -22,7 +22,12 @@
             placeholder="Enter city name"
             id="search-input"
           />
-          <input type="submit" value="Search" class="search-button" />
+          <input
+            type="submit"
+            value="Search"
+            class="search-button"
+            id="search-button"
+          />
         </form>
       </header>
       <main>
@@ -31,12 +36,12 @@
         <h2>city name</h2>
 
         <div class="current-forecast">
-          <div class="time">
-            Saturday 12:30
+          <div class="first-line">
+            <div class="time">Saturday 12:30</div>
             <span class="condition">, Scattered Clouds </span>
           </div>
-          <div class="humidity">
-            humidity :<strong> 66%</strong>
+          <div class="second-line">
+            <div class="humidity">humidity :<strong> 66%</strong></div>
             <span class="wind">, wind :<strong> 3.13km/h</strong> </span>
           </div>
         </div>
@@ -61,5 +66,6 @@
         >.
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>

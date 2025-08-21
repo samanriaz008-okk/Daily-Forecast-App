@@ -33,6 +33,7 @@ h1 {
   font-weight: 400;
   color: white;
   margin-top: 0;
+  margin-bottom: 0;
 }
 .icon {
   display: flex;
@@ -43,20 +44,21 @@ h1 {
 }
 
 h2 {
-  color: white;
+  color: rgb(23, 163, 228);
   display: flex;
   justify-content: center;
-  font-weight: 200;
-  margin-bottom: 30px;
+  font-weight: 300;
+  margin-bottom: 50px;
+  margin-top: 20px;
 }
-.time {
+.first-line {
   display: flex;
   justify-content: center;
   color: rgb(255, 255, 255, 0.5);
   line-height: 30px;
   font-size: 16px;
 }
-.humidity {
+.second-line {
   display: flex;
   justify-content: center;
   color: rgb(255, 255, 255, 0.5);
