@@ -6,6 +6,7 @@
     <title>Daily Forecast App</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Merienda:wght@300..900&display=swap"
       rel="stylesheet"
@@ -15,7 +16,7 @@
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-temperature">
+        <form class="search-temperature" id="search-temperature">
           <input
             type="text"
             class="search-input"
@@ -32,12 +33,12 @@
       </header>
       <main>
         <div class="icon">🌥️</div>
-        <h1 class="current-temperature">21°C</h1>
-        <h2>city name</h2>
+        <h1 class="current-temperature" id="current-temperature"></h1>
+        <h2></h2>
 
         <div class="current-forecast">
           <div class="first-line">
-            <div class="time">Saturday 12:30</div>
+            <div class="time" id="time">Saturday 12:30</div>
             <span class="condition">, Scattered Clouds </span>
           </div>
           <div class="second-line">
