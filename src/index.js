@@ -59,4 +59,4 @@ function searchInput(event) {
 let searchForm = document.querySelector("#search-temperature");
 searchForm.addEventListener("submit", searchInput);
 
-searchCity("dublin");
+searchCity("Islamabad");
