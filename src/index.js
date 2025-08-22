@@ -35,18 +35,15 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#wind");
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
+  let icon = document.querySelector("#icon");
 
+  icon.innerHTML = `<img src="${response.data.condition.icon_url}" class="icon" />`;
   timeElement.innerHTML = displayTime(date);
   cityElement.innerHTML = city;
   currentTemperature.innerHTML = `${temperature}°C`;
   weatherCondition.innerHTML = `, Condition: ${response.data.condition.description}`;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windElement.innerHTML = `${response.data.wind.speed}km/h`;
-
-  let weatherIcon = document.querySelector("#icon");
-  let currentWeather = response.data.condition;
-  //weatherIcon.innerHTML = currentWeather;
-  console.log(response);
 }
 function searchCity(city) {
   let apiKey = "9aa8ab264078edftd860c3e0foabbd02";
@@ -62,4 +59,4 @@ function searchInput(event) {
 let searchForm = document.querySelector("#search-temperature");
 searchForm.addEventListener("submit", searchInput);
 
-searchCity("Islamabad");
+searchCity("dublin");
