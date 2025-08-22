@@ -31,55 +31,58 @@ h1 {
   font-size: 60px;
   font-family: "Karla", sans-serif;
   font-weight: 400;
-  color: white;
+  color: rgb(0, 0, 0);
   margin-top: 0;
   margin-bottom: 0;
 }
 .icon {
   display: block;
   margin: 0 auto;
-  width: 180px;
+  width: 220px;
 }
 
 h2 {
-  color: rgb(23, 163, 228);
+  color: rgb(113, 3, 147);
   display: flex;
   justify-content: center;
   font-weight: 300;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-top: 20px;
 }
 .first-line {
   display: flex;
   justify-content: center;
-  color: rgb(255, 255, 255, 0.5);
+  color: rgb(0, 0, 0, 0.5);
   line-height: 30px;
   font-size: 16px;
 }
 .second-line {
   display: flex;
   justify-content: center;
-  color: rgb(255, 255, 255, 0.5);
+  color: rgb(0, 0, 0, 0.5);
   line-height: 25px;
   font-size: 16px;
 }
 footer {
-  color: rgb(255, 255, 255, 0.5);
+  color: rgb(0, 0, 0, 0.5);
   text-align: center;
 
-  margin-top: 40%;
+  margin-top: 25%;
   padding: 20px;
 }
 .weather-app {
-  background: linear-gradient(
-    179.4deg,
-    rgb(12, 20, 69) -16.9%,
-    rgb(112, 26, 98) 119.9%
+  background: radial-gradient(
+    circle at 12.3% 19.3%,
+    rgb(85, 88, 218) 0%,
+    rgb(95, 209, 249) 100.2%
   );
+  width: 80%;
+  display: block;
+  margin: 20px auto;
 }
 a {
-  color: rgb(23, 163, 228);
+  color: rgb(113, 3, 147);
 }
 strong {
-  color: rgb(23, 163, 228);
+  color: rgb(113, 3, 147);
 }
