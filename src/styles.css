@@ -38,7 +38,7 @@ h1 {
 .icon {
   display: block;
   margin: 0 auto;
-  width: 220px;
+  width: 150px;
 }
 
 h2 {
@@ -46,8 +46,7 @@ h2 {
   display: flex;
   justify-content: center;
   font-weight: 300;
-  margin-bottom: 30px;
-  margin-top: 20px;
+  margin-bottom: 18px;
 }
 .first-line {
   display: flex;
@@ -85,4 +84,27 @@ a {
 }
 strong {
   color: rgb(113, 3, 147);
+}
+.weather-forecast {
+  display: flex;
+}
+.forcast-date {
+  color: rgb(0, 0, 0, 0.5);
+  text-align: center;
+}
+.forecast-icon {
+  text-align: center;
+}
+.forecast-temperature {
+  display: flex;
+  justify-content: center;
+  color: rgb(113, 3, 147);
+}
+.max-temperature {
+  padding: 10px;
+  font-weight: 900;
+}
+.min-temperature {
+  padding: 10px;
+  opacity: 0.6;
 }
