@@ -36,16 +36,18 @@
         <div class="icon" id="icon"></div>
         <h1 class="current-temperature" id="current-temperature"></h1>
         <h2></h2>
-
-        <div class="first-line">
-          <div class="time" id="time"></div>
-          <span id="condition"></span>
+        <div class="current-forecast">
+          <div class="first-line">
+            <div class="time" id="time"></div>
+            <span id="condition"></span>
+          </div>
+          <div class="second-line">
+            <div class="humidity">
+              humidity :<strong id="humidity"></strong>
+            </div>
+            <span class="wind"> , wind :<strong id="wind"></strong> </span>
+          </div>
         </div>
-        <div class="second-line">
-          <div class="humidity">humidity :<strong id="humidity"></strong></div>
-          <span class="wind"> , wind :<strong id="wind"></strong> </span>
-        </div>
-
         <div class="weather-forecast">
           <div class="forcast-date">sun</div>
           <div class="forecast-icon">☀️</div>
@@ -53,6 +55,7 @@
             <div class="max-temperature">15°C</div>
             <div class="min-temperature">10°C</div>
           </div>
+
           <div class="forcast-date">sun</div>
           <div class="forecast-icon">☀️</div>
           <div class="forecast-temperature">
@@ -80,30 +83,29 @@
               <div class="min-temperature">10°C</div>
             </div>
           </div>
-       </main>
-
-          <footer>
-            Coded by
-            <a href="https://github.com/samanriaz008-okk" target="_blank"
-              >Saman Riaz</a
-            >
-            and is an open source on
-            <a
-              href="https://github.com/samanriaz008-okk/Daily-Forecast-App"
-              target="_blank"
-            >
-              Github</a
-            >
-            and
-            <a
-              href="https://app.netlify.com/projects/dailyforecastsapp/overview"
-              target="_blank"
-              >Netlify</a
-            >.
-          </footer>
         </div>
+      </main>
+      <footer>
+        Coded by
+        <a href="https://github.com/samanriaz008-okk" target="_blank"
+          >Saman Riaz</a
+        >
+        and is an open source on
+        <a
+          href="https://github.com/samanriaz008-okk/Daily-Forecast-App"
+          target="_blank"
+        >
+          Github</a
+        >
+        and
+        <a
+          href="https://app.netlify.com/projects/dailyforecastsapp/overview"
+          target="_blank"
+          >Netlify</a
+        >.
+      </footer>
     </div>
 
-        <script src="src/index.js"></script>
+    <script src="src/index.js"></script>
   </body>
 </html>
