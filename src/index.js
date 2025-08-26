@@ -60,3 +60,24 @@ let searchForm = document.querySelector("#search-temperature");
 searchForm.addEventListener("submit", searchInput);
 
 searchCity("Islamabad");
+function displayForecast() {
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+  let forecastHTML = "";
+
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+    <div class="forecast">
+    <div class="forcast-date">${day}</div>
+    <div class="forecast-icon">☀️</div>
+    <div class="forecast-temperature">
+                  <div class="max-temperature">15°C</div>
+                  <div class="min-temperature">10°C</div>
+                  </div>
+                  </div>`;
+    let forecastElement = document.querySelector("#weather-forecast");
+    forecastElement.innerHTML = forecastHTML;
+  });
+}
+displayForecast();
