@@ -44,6 +44,8 @@ function displayTemperature(response) {
   weatherCondition.innerHTML = `, Condition: ${response.data.condition.description}`;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windElement.innerHTML = `${response.data.wind.speed}km/h`;
+
+  dailyForecast(response.data.city);
 }
 function searchCity(city) {
   let apiKey = "9aa8ab264078edftd860c3e0foabbd02";
@@ -60,6 +62,14 @@ let searchForm = document.querySelector("#search-temperature");
 searchForm.addEventListener("submit", searchInput);
 
 searchCity("Islamabad");
+
+function dailyForecast(response) {
+  let apiKey = "9aa8ab264078edftd860c3e0foabbd02";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${response}&key=${apiKey}&unit=metric`;
+
+  axios.get(apiUrl).then(displayForecast);
+}
+
 function displayForecast() {
   let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
   let forecastHTML = "";
