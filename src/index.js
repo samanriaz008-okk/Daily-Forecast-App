@@ -75,7 +75,6 @@ function formatDate(timestamp) {
 }
 
 function displayForecast(response) {
-  console.log(response);
   let forecastHTML = "";
 
   response.data.daily.forEach(function (day, index) {
